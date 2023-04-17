@@ -46,7 +46,6 @@ print(files)
 for file in files :
     if file == ".DS_Store":
         continue
-     if file == "Mal33-1.csv" or file == "Mal39-1.csv" or file == "Mal43-1.csv" or file == "Mal52-1.csv":
         
         df = pd.read_csv(file,names=COLOUMN_NAMES,header=0,low_memory=False)
         print(file)
